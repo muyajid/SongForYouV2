@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song List</title>
+    <style>
+        /* Menata elemen body dengan latar belakang yang nyaman */
+        body {
+            font-family: Arial, sans-serif;
+            /* Menggunakan font yang bersih dan mudah dibaca */
+            background-color: #f4f4f9;
+            /* Latar belakang abu-abu muda */
+            text-align: center;
+            /* Menyusun teks agar berada di tengah */
+            padding: 50px;
+            /* Memberikan jarak pada semua sisi */
+        }
+
+        /* Menata tombol agar tampil lebih menarik */
+        button {
+            background-color: #4CAF50;
+            /* Warna latar belakang hijau */
+            color: white;
+            /* Warna teks putih */
+            padding: 15px 32px;
+            /* Ukuran tombol */
+            font-size: 16px;
+            /* Ukuran font */
+            border: none;
+            /* Menghapus border default */
+            border-radius: 5px;
+            /* Memberikan sudut melengkung pada tombol */
+            cursor: pointer;
+            /* Mengubah kursor menjadi tangan saat hover */
+            transition: background-color 0.3s ease;
+            /* Animasi transisi untuk warna tombol */
+        }
+
+        /* Efek hover pada tombol */
+        button:hover {
+            background-color: #45a049;
+            /* Warna tombol sedikit lebih gelap saat dihover */
+        }
+
+        /* Menata elemen output */
+        #output {
+            font-size: 18px;
+            /* Ukuran font untuk output */
+            color: #333;
+            /* Warna teks abu-abu gelap */
+            margin-top: 20px;
+            /* Memberikan jarak dari tombol */
+        }
+
+        /* Menyembunyikan elemen audio agar tidak terlihat */
+        audio {
+            display: none;
+            /* Menyembunyikan elemen audio */
+        }
+    </style>
+</head>
+
+<body>
+    <button id="tombol">Putar Lagu</button>
+    <p id="output"></p> <!-- Elemen untuk menampilkan lagu -->
+    <script src="script.js"></script>
+    <audio id="audio">
+        <source src="utomp3.com - Laufey  Falling Behind Official Audio.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
